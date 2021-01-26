@@ -1,0 +1,119 @@
+@import "@elastic/eui/src/theme_light.scss";
+
+@font-face {
+    font-family: "weathericons";
+    src: url("../assets/fonts/weathericons.woff") format("woff2");
+}
+@import "../assets/css/icons.scss";
+@import "../assets/css/mixins.scss";
+
+.euiPage {
+    background-color: #f5f7fa;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: .5rem;
+}
+
+h1, h2 {
+    @include text-title;
+}
+
+.euiPageContent {
+    border: 0 !important;
+    background-color: inherit !important;
+    box-shadow: none !important;
+}
+
+.euiPageBody {
+    min-height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.euiCard {
+    position: relative;
+}
+
+.euiDroppable--withPanel {
+    box-shadow: none;
+    border: 0;
+    background-color: inherit;
+}
+
+.euiComboBox {
+    margin: auto;
+}
+
+.temp {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -5px;
+    font-size: 1rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.euiHeaderSectionItem {
+    &::after{
+        display: none;
+    }
+}
+
+.search {
+    min-width: 320px;
+}
+
+.favorite {
+    cursor: pointer;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ @media only screen and (max-width: 600px) {
+     .search {
+        min-width: 100%;
+    }
+    .breadcrumb {
+        flex-direction: column;
+    }
+ }

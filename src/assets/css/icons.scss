@@ -1,0 +1,86 @@
+.icon {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    &:after, &:before {
+        font-size: 2rem;
+        font-family: "weathericons";
+    }
+}
+
+.icon[data-icon="17"]:after {
+    content: "\f07d"
+}
+
+.icon[data-icon="17n"]:after {
+    content: "\f080"
+}
+
+.icon[data-icon*="16"]:after,.icon[data-icon*="15"]:after,
+.icon[data-icon*="14"]:after {
+    content: "\f013"
+}
+
+.icon[data-icon="13"]:after,.icon[data-icon="12"]:after {
+    content: "\f00c"
+}
+
+.icon[data-icon="13n"]:after,.icon[data-icon="12n"]:after {
+    content: "\f083"
+}
+
+.icon[data-icon="11"]:after {
+    content: "\f00d"
+}
+
+.icon[data-icon="11n"]:after {
+    content: "\f02e"
+}
+
+.icon[data-icon*="64"]:after,.icon[data-icon*="63"]:after,
+.icon[data-icon*="62"]:after,.icon[data-icon*="61"]:after,
+.icon[data-icon*="54"]:after,.icon[data-icon*="53"]:after,
+.icon[data-icon*="52"]:after,.icon[data-icon*="51"]:after {
+    content: "\f01e"
+}
+
+.icon[data-icon*="46"]:after,.icon[data-icon*="45"]:after,
+.icon[data-icon*="44"]:after,.icon[data-icon*="26"]:after,
+.icon[data-icon*="25"]:after,.icon[data-icon*="24"]:after,
+.icon[data-icon*="23"]:after {
+    content: "\f019"
+}
+
+.icon[data-icon="43"]:after {
+    content: "\f008"
+}
+
+.icon[data-icon="43n"]:after {
+    content: "\f036"
+}
+
+.icon[data-icon*="74"]:after,
+.icon[data-icon*="73"]:after,
+.icon[data-icon*="72"]:after,
+.icon[data-icon*="71"]:after,
+.icon[data-icon*="36"]:after,
+.icon[data-icon*="35"]:after,
+.icon[data-icon*="34"]:after,
+.icon[data-icon*="33"]:after {
+    content: "\f01b"
+}
+
+.icon[data-icon="81"]:after,
+.icon[data-icon="82"]:after {
+    content: "\f003"
+}
+
+.icon[data-icon="81n"]:after,
+.icon[data-icon="82n"]:after {
+    content: "\f04a"
+}
+
+.icon[data-icon="wind"]:after {
+    content: "\f050"
+}

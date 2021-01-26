@@ -1,0 +1,43 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    a::after{
+        content: '￫';
+        margin:0 5px;
+    }
+}
+
+.city {
+    position: relative;
+    padding: 10px;
+    font-size: 1.6rem;
+
+    .icon {
+        font-size: 4.5rem;
+        &::after {
+            font-size: 3.5rem;
+        }
+    }
+
+    .favorite {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: #F04E98;
+    }
+
+    .temp {
+        margin-right: 20px;
+    }
+}
+
+.city-title {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.date {
+    text-transform: capitalize;
+}

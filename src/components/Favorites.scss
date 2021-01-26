@@ -1,0 +1,50 @@
+.favorite-stats {
+    display: grid;
+    position: relative;
+    align-items: center;
+    grid-template-columns: 50px 80px 1fr 1fr 35px;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        .icon {
+            position: absolute;
+            left: 40px;
+            top: -10px;
+        }
+        .favorite {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .favorite-name {
+            margin: 10px 0;
+        }
+    }
+}
+
+.favorite-rain {
+    span {
+        opacity: .7;
+    }
+}
+
+.euiCard__footer {
+    margin: 0;
+}
+
+.euiDroppable--withPanel {
+    box-shadow: none;
+    border: 0;
+}
+
+.favorite-block {
+    background: white;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px -1px RGB(152 162 179 / 20%), 
+        0 3px 2px -2px RGB(152 162 179 / 20%), 
+        inset 0 0 0 1px RGB(15 39 118 / 10%);
+    .euiPanel {
+        border: 0;
+    }
+}
