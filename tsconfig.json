@@ -6,7 +6,8 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "es6"
     ],
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -19,7 +20,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5",
+    "target": "es5"
   },
   "include": [
     "src"

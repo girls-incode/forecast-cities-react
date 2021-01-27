@@ -114,8 +114,6 @@ function Favorites() {
                                                                 payload
                                                             });
                                                             let newList = getNewList(favList, payload);
-                                                            console.log('newList', newList);
-
                                                             setFavList(newList);
                                                         }}
                                                     />

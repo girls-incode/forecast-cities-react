@@ -40,7 +40,7 @@ function apiReducer(state = initState, action: any) {
             return {
                 ...state,
                 loading: false,
-                error: false
+                error: action.payload
             }
         default:
             return state

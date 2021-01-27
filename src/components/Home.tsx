@@ -20,7 +20,6 @@ function Home() {
     const url = process.env.REACT_APP_HOME;
 
     useEffect(() => {
-        console.log(hasFav);
         dispatch({ type: types.HOME_INIT_SAGA, url });
     }, []);
 
